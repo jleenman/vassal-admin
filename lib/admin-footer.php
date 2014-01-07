@@ -13,42 +13,39 @@ function custom_admin_footer() {
 	$ccbysa = array(
 		"CC-BY-SA 3.0", //title
 		"http://creativecommons.org/licenses/by-sa/3.0/deed", //url
-		"cba"//icons
+		"cba" //icons
 		);
 	$ccbynd = array(
 		"CC-BY-ND 3.0", //title
 		"http://creativecommons.org/licenses/by-nd/3.0/deed", //url
-		"cbd"//icons
+		"cbd" //icons
 		);
 
 	// OPTIONS
 	$developer = 'VASSAL'; //developer name
 	$url = 'http://www.vassal.nl'; //developer url
-	$year = '2014'; //year of delivery
+	$year = '2014'; //year of project delivery
 	$cc = $ccbysa; //select lisence here
 
 	//compose footer
-	$thankyou = '<span id="footer-thankyou">' . 
-					'Developed by ' .
-					'<a href="' . $url . '" target="_blank">' . 
-						$developer . 
-					'</a> ' . 
-					$year. 
+	$thankyou =	'<span id="footer-thankyou">'.
+					'Developed by '.
+					'<a href="' . $url . '" target="_blank">'.
+						$developer.
+					'</a> '.
+					$year.
 				'</span>';
-	$license = 'License ' .
-					'<a rel="license" 
-						href="'.$cc[1].'" target="_blank">'. //url
+	$license =	'License '.
+					'<a rel="license" href="'.$cc[1].'" target="_blank">'. //url
 							$cc[0]. //title
 					'</a> '.
 					'<span class="cc-ttf">'.
 						$cc[2]. //icon
 					'</span>';
-	$style = '<style scoped>
+	$style =	'<style scoped>
 					@font-face{
 						font-family:"Creative Commons";
-						src:url(' .
-							plugins_url( '../fonts/cc-icons.ttf' , __FILE__ )
-						. ');
+						src:url(' . plugins_url( '../fonts/cc-icons.ttf' , __FILE__ ) . ');
 					}
 					.cc-ttf {
 						font-family:"Creative Commons";
@@ -58,7 +55,7 @@ function custom_admin_footer() {
 				</style>';
 
 	//print information
-	echo $thankyou  . ' &mdash; ' . $license . $style;
+	echo $thankyou .' &mdash; '. $license . $style;
 
 }
 add_filter('admin_footer_text', 'custom_admin_footer');
