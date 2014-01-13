@@ -6,18 +6,18 @@ function custom_admin_footer() {
 
 	//selectable licenses
 	$ccby = array(
-		"CC-BY 3.0", //title
-		"http://creativecommons.org/licenses/by/3.0/deed", //url
+		"CC-BY 4.0", //title
+		"http://creativecommons.org/licenses/by/4.0/", //url
 		"cb" //icons
 		);
 	$ccbysa = array(
-		"CC-BY-SA 3.0", //title
-		"http://creativecommons.org/licenses/by-sa/3.0/deed", //url
+		"CC-BY-SA 4.0", //title
+		"http://creativecommons.org/licenses/by-sa/4.0/", //url
 		"cba" //icons
 		);
 	$ccbynd = array(
-		"CC-BY-ND 3.0", //title
-		"http://creativecommons.org/licenses/by-nd/3.0/deed", //url
+		"CC-BY-ND 4.0", //title
+		"http://creativecommons.org/licenses/by-nd/4.0/", //url
 		"cbd" //icons
 		);
 
