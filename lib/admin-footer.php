@@ -25,7 +25,7 @@ function custom_admin_footer() {
 	$developer = 'VASSAL'; //developer name
 	$url = 'http://www.vassal.nl'; //developer url
 	$year = '2014'; //year of project delivery
-	$cc = $ccbysa; //select lisence here
+	$cc = $ccbysa; //select license here
 
 	//compose footer
 	$thankyou =	'<span id="footer-thankyou">'.
