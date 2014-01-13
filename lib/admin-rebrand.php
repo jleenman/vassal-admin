@@ -20,4 +20,27 @@ function custom_favicon() {
 }
 add_action('admin_head', 'custom_favicon');
 
+/*-----------------------------------------------------------------------------------*/
+/* Add VASSAL Style */
+/*-----------------------------------------------------------------------------------*/
+function custom_style() {
+	echo '<style scoped>
+		@media screen and (min-width: 782px) {
+			html {
+				background-image: url(' 
+					. plugins_url( '../img/logo-pawn.png' , __FILE__ ) . 
+						');
+				background-repeat: no-repeat;
+				background-attachment:fixed;
+				background-position: bottom right;
+				background-size:25%;
+			}
+			#wpbody {
+				opacity:.97;
+			}
+		}
+	</style>';
+}
+add_action('admin_head', 'custom_style');
+
 ?>
