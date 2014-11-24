@@ -38,6 +38,9 @@ function custom_style() {
 			#wpbody {
 				opacity:.97;
 			}
+			#templateside {
+				background-color:rgba(241,241,241,.9);
+			}
 		}
 	</style>';
 }
