@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: 		VASSAL ADMIN
-Description: 		Customise and rebrand the Wordpress Admin 
-Author: 			Jonathan Leenman
-Author URI: 		http://www.vassal.nl
+Plugin Name:         VASSAL ADMIN
+Description:         Customise and rebrand the Wordpress Admin
+Author:             Jonathan Leenman
+Author URI:         http://www.vassal.nl
 
 License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 License URI:        http://creativecommons.org/licenses/by-sa/4.0/
