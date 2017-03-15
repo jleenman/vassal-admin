@@ -63,3 +63,7 @@ http://codex.wordpress.org/Creating_Admin_Themes
     display: block;
     animation: breathing 4s ease-in-out infinite alternate;
 }
+
+.login h1 a:hover {
+    animation: heartbeat 1.6s ease-in-out infinite;
+}
