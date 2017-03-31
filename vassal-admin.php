@@ -5,7 +5,7 @@ Description:         Customise and rebrand the Wordpress Admin
 Author:             Jonathan Leenman
 Author URI:         https://github.com/jleenman/
 GitHub Plugin URI:	https://github.com/jleenman/vassal-admin
-Version:			1.0.8
+Version:			1.0.9
 
 License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 License URI:        http://creativecommons.org/licenses/by-sa/4.0/
