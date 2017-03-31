@@ -39,7 +39,7 @@ function custom_style() {
 				background:none;
 			}
 			#wpbody {
-                background-color: rgba(241, 241, 241, 0.97);
+                opacity:.97;
             }
             #templateside {
                 background-color:rgba(241,241,241,.95);
