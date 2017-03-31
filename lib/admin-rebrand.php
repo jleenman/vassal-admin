@@ -35,7 +35,10 @@ function custom_style() {
                 background-position: bottom right;
                 background-size:25%;
             }
-            #wpbody {
+            body.wp-admin{
+				background:none;
+			}
+			#wpbody {
                 opacity:.97;
             }
             #templateside {
