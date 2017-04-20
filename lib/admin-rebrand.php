@@ -26,7 +26,7 @@ add_action('admin_head', 'custom_favicon');
 function custom_style() {
     echo '<style scoped>
         @media screen and (min-width: 782px) {
-            html {
+            body.wp-admin {
                 background-image: url('
                     . plugins_url( '../img/logo-pawn.png' , __FILE__ ) .
                         ');
@@ -35,14 +35,11 @@ function custom_style() {
                 background-position: bottom right;
                 background-size:25%;
             }
-            body.wp-admin{
-				background:none;
-			}
-			#wpbody {
+			body.wp-admin #wpbody {
                 opacity:.97;
             }
-            #templateside {
-                background-color:rgba(241,241,241,.95);
+            body.wp-admin #wpbody #templateside {
+                background-color:#f1f1f1;
             }
         }
     </style>';
