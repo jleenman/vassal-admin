@@ -27,7 +27,8 @@ function custom_style() {
     echo '<style scoped>
         @media screen and (min-width: 782px) {
             body.wp-admin {
-                background-image: url('
+                background-color: #ffffff;
+				background-image: url('
                     . plugins_url( '../img/logo-pawn.png' , __FILE__ ) .
                         ');
                 background-repeat: no-repeat;
