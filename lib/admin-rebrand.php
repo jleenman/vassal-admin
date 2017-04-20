@@ -41,7 +41,7 @@ function custom_style() {
             body.wp-admin #wpbody #templateside {
                 background-color:#f1f1f1;
             }
-			iframe body.wp-admin {
+			body.wp-admin.iframe {
 				background-image:none!important;
 			}
         }
