@@ -42,7 +42,7 @@ function custom_style() {
                 background-color:#f1f1f1;
             }
 			body.wp-admin.iframe {
-				background-image:none!important;
+				background:none!important;
 			}
         }
     </style>';
