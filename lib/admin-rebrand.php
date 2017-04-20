@@ -27,7 +27,7 @@ function custom_style() {
     echo '<style scoped>
         @media screen and (min-width: 782px) {
             body.wp-admin {
-                background-color: #ffffff;
+                background-color: #f9f9f9;
 				background-image: url('
                     . plugins_url( '../img/logo-pawn.png' , __FILE__ ) .
                         ');
@@ -40,7 +40,7 @@ function custom_style() {
                 opacity:.97;
             }
             body.wp-admin #wpbody #templateside {
-                background-color:#f1f1f1;
+                background-color:#f9f9f9;
             }
 			body.wp-admin.iframe {
 				background:none!important;
