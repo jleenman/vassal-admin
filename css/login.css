@@ -18,37 +18,12 @@ http://codex.wordpress.org/Creating_Admin_Themes
 
 @-webkit-keyframes breathing {
 	0% {
+		-webkit-transform: scale(1, 1) rotateX(0);
 		transform: scale(1, 1) rotateX(0);
 	}
 	100% {
+		-webkit-transform: scale(1.2, 1.2) rotateX(20deg);
 		transform: scale(1.2, 1.2) rotateX(20deg);
-	}
-}
-
-
-/*heartbeat animation*/
-
-@-webkit-keyframes heartbeat {
-	0% {
-		transform: scale(1, 1);
-	}
-	10% {
-		transform: scale(.95, .95);
-	}
-	20% {
-		transform: scale(1.1, 1.1);
-	}
-	30% {
-		transform: scale(1, 1);
-	}
-	40% {
-		transform: scale(1.1, 1.1);
-	}
-	50% {
-		transform: scale(1, 1);
-	}
-	100% {
-		transform: scale(1, 1);
 	}
 }
 
@@ -61,9 +36,6 @@ http://codex.wordpress.org/Creating_Admin_Themes
 	overflow: hidden;
 	padding-bottom: 15px;
 	display: block;
+	-webkit-animation: breathing 4s ease-in-out infinite alternate;
 	animation: breathing 4s ease-in-out infinite alternate;
-}
-
-.login h1 a:hover {
-	animation: heartbeat 1.6s ease-in-out infinite;
 }
