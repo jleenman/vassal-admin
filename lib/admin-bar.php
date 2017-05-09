@@ -9,7 +9,6 @@ function vssl_adminbar() {
     $wp_admin_bar->remove_node('wp-logo');
 
     $wp_admin_bar->remove_menu('view-site'); //remove 'view site' submenu from site title
-    $wp_admin_bar->remove_menu('comments'); //remove comments as many websites don't even have those enabled.
 
     $wp_admin_bar->remove_node( 'new-link' );
     $wp_admin_bar->remove_node( 'new-user' );

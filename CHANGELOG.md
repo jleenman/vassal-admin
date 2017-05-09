@@ -1,3 +1,7 @@
+#### 1.1.3
+* removed comments section removal
+* CSS tweaks
+
 #### 1.1.1
 * fixed namespace to vssl
 * first version of vssl_copyright function

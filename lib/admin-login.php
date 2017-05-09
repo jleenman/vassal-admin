@@ -7,7 +7,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 // calling login css so to style the page
-function vssl_login_css() {	wp_enqueue_style( 'bones_login_css', plugins_url( '../css/login.css' , __FILE__ ), false ); }
+function vssl_login_css() {	wp_enqueue_style( 'vssl_login_css', plugins_url( '../css/login.css' , __FILE__ ), false ); }
 
 // changing the logo link from wordpress.org to your site
 function vssl_login_url() {  return home_url(); }
