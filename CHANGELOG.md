@@ -1,3 +1,6 @@
+#### 1.1.4
+* activated frontend functions
+
 #### 1.1.3
 * removed comments section removal
 * CSS tweaks
