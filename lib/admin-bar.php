@@ -2,7 +2,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* Customise Admin Bar */
 /*-----------------------------------------------------------------------------------*/
-function custom_adminbar() {
+function vssl_adminbar() {
 
     global $wp_admin_bar;
     //remove WP logo and submenu
@@ -15,19 +15,19 @@ function custom_adminbar() {
     $wp_admin_bar->remove_node( 'new-user' );
     $wp_admin_bar->remove_node( 'new-media' );
 }
-add_action( 'wp_before_admin_bar_render', 'custom_adminbar' );
+add_action( 'wp_before_admin_bar_render', 'vssl_adminbar' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Change "Howdy" into "Hi there"
     (source: http://wpmu.org/daily-tip-how-to-change-the-wordpress-howdy-message-to-a-custom-welcome/) */
 /*-----------------------------------------------------------------------------------*/
-function custom_welcome_message($translated, $text, $domain) {
+function vssl_welcome_message($translated, $text, $domain) {
     if ('default' != $domain)
         return $translated;
     if (false !== strpos($translated, 'Howdy'))
         return str_replace('Howdy', 'Hi there', $translated);
     return $translated;
 }
-add_filter('gettext', 'custom_welcome_message', 10, 3);
+add_filter('gettext', 'vssl_welcome_message', 10, 3);
 
 ?>

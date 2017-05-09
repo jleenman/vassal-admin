@@ -1,4 +1,8 @@
 #### 1.1.1
+* fixed namespace to vssl
+* first version of vssl_copyright function
+
+#### 1.1.1
 * changelog fix
 
 #### 1.1.0

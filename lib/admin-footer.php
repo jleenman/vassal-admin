@@ -2,7 +2,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* Customise backend developer & copyright footer */
 /*-----------------------------------------------------------------------------------*/
-function custom_admin_footer() {
+function vssl_admin_footer() {
 
     //selectable licenses
     $ccby = array(
@@ -58,6 +58,6 @@ function custom_admin_footer() {
     echo $thankyou .' &mdash; '. $license . $style;
 
 }
-add_filter('admin_footer_text', 'custom_admin_footer');
+add_filter('admin_footer_text', 'vssl_admin_footer');
 
 ?>

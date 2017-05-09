@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* Remove Unused Admin Sidebar Menu Items */
 /*-----------------------------------------------------------------------------------*/
-function custom_admin_sidebar() {
+function vssl_admin_sidebar() {
     $remove_menu_items = array(__('Links'));
     global $menu;
     end ($menu);
@@ -16,6 +16,6 @@ function custom_admin_sidebar() {
     /* __('Appearance'),__('Comments'),__('Links'),__('Media'),__('Pages'),__('Plugins'),__('Posts'),
         __('Tools'),__('Settings'),__('Tools'),__('Users') */
 
-add_action('admin_menu', 'custom_admin_sidebar');
+add_action('admin_menu', 'vssl_admin_sidebar');
 
 ?>
