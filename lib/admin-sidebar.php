@@ -14,7 +14,7 @@ function vssl_admin_sidebar() {
     }
 }
     /* __('Appearance'),__('Comments'),__('Links'),__('Media'),__('Pages'),__('Plugins'),__('Posts'),
-        __('Tools'),__('Settings'),__('Tools'),__('Users') */
+        ,__('Settings'),__('Tools'),__('Users') */
 
 add_action('admin_menu', 'vssl_admin_sidebar');
 

@@ -1,6 +1,6 @@
 ### Description
 
-This plugin removes most of the WordPress branding and adds some customizations to the Back-end. 
+This plugin removes most of the WordPress branding and adds some customisations to the Back-end.
 
 ### Installation
 - Install into the WordPress plugins directory and activate.
@@ -26,6 +26,6 @@ This plugin removes most of the WordPress branding and adds some customizations 
 ##### Customize back-end developer & copyright footer
 - Adds a custom copyright notice in the back-end footer.
 
-*Edit `$developer`, `$dev_url` and `$releaseyear` to customize for your own project.*
+*Edit `$developer`, `$dev-url` and `$release-year` to customise for your own project.*
 
 *Choose from `$ccby`, `$ccbysa` and `$ccbynd` to display the corresponding license.*
