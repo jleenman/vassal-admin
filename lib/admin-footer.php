@@ -24,7 +24,7 @@ function vssl_admin_footer() {
     // OPTIONS
     $developer = 'VASSAL'; //developer name
     $url = 'http://www.vassal.nl'; //developer url
-    $year = '2017'; //year of project delivery
+    $year = '2020'; //year of project delivery
     $cc = $ccbysa; //select license here
 
     //compose footer
