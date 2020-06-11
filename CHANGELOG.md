@@ -1,4 +1,7 @@
 #### 1.1.4
+* removed customizer
+
+#### 1.1.4
 * activated frontend functions
 
 #### 1.1.3

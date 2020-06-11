@@ -12,6 +12,15 @@ function vssl_admin_sidebar() {
         if(in_array($item[0] != NULL?$item[0]:"" , $remove_menu_items)){
         unset($menu[key($menu)]);}
     }
+
+    global $submenu;
+    if ( isset( $submenu[ 'themes.php' ] ) ) {
+        foreach ( $submenu[ 'themes.php' ] as $index => $menu_item ) {
+            if ( in_array( array( 'Customize', 'Customizer', 'customize' ), $menu_item ) ) {
+                unset( $submenu[ 'themes.php' ][ $index ] );
+            }
+        }
+    }
 }
     /* __('Appearance'),__('Comments'),__('Links'),__('Media'),__('Pages'),__('Plugins'),__('Posts'),
         __('Tools'),__('Settings'),__('Tools'),__('Users') */
