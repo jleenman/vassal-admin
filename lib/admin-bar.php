@@ -26,7 +26,7 @@ function vssl_welcome_message($translated, $text, $domain) {
     if ('default' != $domain)
         return $translated;
     if (false !== strpos($translated, 'Howdy'))
-        return str_replace('Howdy', 'Hi there', $translated);
+        return str_replace('Howdy', 'Welcome', $translated);
     return $translated;
 }
 add_filter('gettext', 'vssl_welcome_message', 10, 3);

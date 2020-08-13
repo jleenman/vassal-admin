@@ -23,7 +23,7 @@ function vssl_admin_footer() {
 
     // OPTIONS
     $developer = 'VASSAL'; //developer name
-    $url = 'http://www.vassal.nl'; //developer url
+    $url = 'https://www.vassal.nl'; //developer url
     $year = '2020'; //year of project delivery
     $cc = $ccbysa; //select license here
 
