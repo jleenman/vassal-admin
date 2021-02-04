@@ -46,6 +46,19 @@ function vssl_style() {
 				background:none!important;
 			}
         }
+
+    // hide outlines for hidden widgets
+		#dashboard-widgets .postbox-container .empty-container {
+    		outline: none!important;
+		}
+		#dashboard-widgets .postbox-container .empty-container:after {
+			content:""!important;
+		}
+    //hide update nags and notices
+		#wpbody .notice,
+		#wpbody .error {
+			display:none!important;
+		}
     </style>';
 }
 add_action('admin_head', 'vssl_style');

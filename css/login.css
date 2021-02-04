@@ -13,7 +13,7 @@ http://codex.wordpress.org/Creating_Admin_Themes
 
 ******************************************************************/
 /*breating animation*/
-@-webkit-keyframes breathing {
+/* @-webkit-keyframes breathing {
   0% {
     transform: scale(1, 1) rotateX(0);
   }
@@ -21,8 +21,7 @@ http://codex.wordpress.org/Creating_Admin_Themes
   100% {
     transform: scale(1.1, 1.1) rotateX(20deg);
   }
-}
-
+} */
 .login h1 a {
   background: url(../img/logo-shield.png) no-repeat top center;
   background-size: 180px 180px;

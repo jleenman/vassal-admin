@@ -15,6 +15,7 @@ require_once( plugin_dir_path(__FILE__) . 'lib/admin-rebrand.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/admin-bar.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/admin-login.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/admin-footer.php' );
+require_once( plugin_dir_path(__FILE__) . 'lib/disable-widgets.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/frontend-functions.php' );
 
 ?>
