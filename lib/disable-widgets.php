@@ -19,7 +19,7 @@ function remove_dashboard_widgets() {
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
 		remove_meta_box('dashboard_activity','dashboard', 'normal'); // Activity
 		remove_action( 'welcome_panel','wp_welcome_panel' ); // Welcome Panel
-		remove_meta_box( 'e-dashboard-overview', 'dashboard', 'normal');
+		remove_meta_box( 'e-dashboard-overview', 'dashboard', 'normal'); //Elementor overview
 
 }
 

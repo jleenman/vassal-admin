@@ -47,14 +47,14 @@ function vssl_style() {
 			}
         }
 
-    // hide outlines for hidden widgets
+    /* hide outlines for hidden widgets */
 		#dashboard-widgets .postbox-container .empty-container {
     		outline: none!important;
 		}
 		#dashboard-widgets .postbox-container .empty-container:after {
 			content:""!important;
 		}
-    //hide update nags and notices
+    /* hide update nags and notices */
 		#wpbody .notice,
 		#wpbody .error {
 			display:none!important;
