@@ -4,7 +4,7 @@ Plugin Name:         VASSAL ADMIN
 Description:         Customize the Wordpress Admin
 Author:             Jonathan Leenman
 Author URI:         https://www.vassal.nl
-Version:			       2.0
+Version:			       2.0.0
 
 License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 License URI:        http://creativecommons.org/licenses/by-sa/4.0/
