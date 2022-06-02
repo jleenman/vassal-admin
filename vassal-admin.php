@@ -15,6 +15,9 @@ require_once( plugin_dir_path(__FILE__) . 'lib/settings/settings-admin.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/settings/settings-page.php' );
 require_once( plugin_dir_path(__FILE__) . 'lib/settings/settings-options.php' );
 
+require_once( plugin_dir_path(__FILE__) . 'lib/updater/updater-settings.php' );
+require_once( plugin_dir_path(__FILE__) . 'lib/updater/updater.php' );
+
 
 // Get the value of the setting we've registered with register_setting()
 $setting = get_option('vssl_options');
