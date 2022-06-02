@@ -43,4 +43,10 @@ function vssl_copyright() {
 	return '&copy; ' . $copyright . ' ';
 }
 
+// Shortcode to output custom PHP
+function vssl_copyright_shortcode( $atts ) {
+    echo vssl_copyright();
+}
+add_shortcode('copyright', 'vssl_copyright_shortcode');
+
 ?>

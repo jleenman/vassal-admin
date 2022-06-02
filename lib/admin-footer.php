@@ -24,12 +24,12 @@ function vssl_admin_footer() {
     // OPTIONS
     $developer = 'VASSAL'; //developer name
     $url = 'https://www.vassal.nl'; //developer url
-    $year = '2021'; //year of project delivery
-    $cc = $ccbysa; //select license here
+    $year = '2022'; //year of project delivery
+    $cc = $ccbynd; //select license here
 
     //compose footer
     $thankyou =    '<span id="footer-thankyou">'.
-                    'Developed by '.
+                    'Gerealiseerd door '.
                     '<a href="' . $url . '" target="_blank">'.
                         $developer.
                     '</a> '.
