@@ -1,10 +1,10 @@
 <?php
   /*
   Plugin Name:        VASSAL ADMIN
-  Description:        Vereenvoudig de WordPress Admin. 
+  Description:        Vereenvoudig de WordPress Admin.
   Author:             Jonathan Leenman
   Author URI:         https://www.vassal.nl
-  Version:			      1.9.9
+  Version:			      2.0.0
 
   License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
   License URI:        http://creativecommons.org/licenses/by-sa/4.0/
