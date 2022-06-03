@@ -10,12 +10,13 @@ function vssl_adminbar() {
 
     $wp_admin_bar->remove_menu('view-site'); //remove 'view site' submenu from site title
     $wp_admin_bar->remove_node('site-editor'); //remove 'edit site' menu item
+    $wp_admin_bar->remove_menu('customize');
 
     $wp_admin_bar->remove_node( 'new-link' );
     $wp_admin_bar->remove_node( 'new-user' );
     $wp_admin_bar->remove_node( 'new-media' );
 
-    $wp_admin_bar->remove_menu('customize');
+    $wp_admin_bar->remove_menu('search');
 }
 add_action( 'wp_before_admin_bar_render', 'vssl_adminbar' );
 /*-----------------------------------------------------------------------------------*/

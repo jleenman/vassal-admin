@@ -15,7 +15,7 @@ function vssl_settings_init() {
     add_settings_field(
         'vssl_adminbar_setting',// As of WP 4.6 this value is used only internally.
                                 // Use $args' label_for to populate the id inside the callback.
-            __( 'Show custom Admin bar', 'VASSAL' ),
+            __( 'Gebruik de eenvoudige Admin bar', 'VASSAL' ),
         'vssl_field_setting_callback',
         'VASSAL',
         'vssl_settings_section',
@@ -24,31 +24,10 @@ function vssl_settings_init() {
             'class'             => 'vssl_row',
         )
     );
-    add_settings_field(
-        'vssl_rebrand_setting',
-            __( 'Brand the admin interface', 'VASSAL' ),
-        'vssl_field_setting_callback',
-        'VASSAL',
-        'vssl_settings_section',
-        array(
-            'label_for'         => 'vssl_rebrand_setting',
-            'class'             => 'vssl_row',
-        )
-    );
-    add_settings_field(
-        'vssl_login_setting',
-            __( 'Custom login page', 'VASSAL' ),
-        'vssl_field_setting_callback',
-        'VASSAL',
-        'vssl_settings_section',
-        array(
-            'label_for'         => 'vssl_login_setting',
-            'class'             => 'vssl_row',
-        )
-    );
+
     add_settings_field(
         'vssl_dashboard_setting',
-            __( 'Cleanup Dashboard', 'VASSAL' ),
+            __( 'Schoon het Dashboard op', 'VASSAL' ),
         'vssl_field_setting_callback',
         'VASSAL',
         'vssl_settings_section',
@@ -58,8 +37,19 @@ function vssl_settings_init() {
         )
     );
     add_settings_field(
+        'vssl_login_setting',
+            __( 'Gebruik custom login pagina', 'VASSAL' ),
+        'vssl_field_setting_callback',
+        'VASSAL',
+        'vssl_settings_section',
+        array(
+            'label_for'         => 'vssl_login_setting',
+            'class'             => 'vssl_row',
+        )
+    );
+    add_settings_field(
         'vssl_footer_setting',
-            __( 'Show copyright footer', 'VASSAL' ),
+            __( 'Geef de copyright rechten weer', 'VASSAL' ),
         'vssl_field_setting_callback',
         'VASSAL',
         'vssl_settings_section',
@@ -68,19 +58,30 @@ function vssl_settings_init() {
             'class'             => 'vssl_row',
         )
     );
-    // add_settings_field(
-    //     'vssl_frontend_setting',
-    //         __( 'Enable copyright shortcode on frontend', 'VASSAL' ),
-    //     'vssl_field_setting_callback',
-    //     'VASSAL',
-    //     'vssl_settings_section',
-    //     array(
-    //         'label_for'         => 'vssl_frontend_setting',
-    //         'class'             => 'vssl_row',
-    //         'vssl_custom_data' => 'frontend_setting',
-    //         'description' => 'Instructions: use [copyright] to display "&copy;firstyear-thisyear""',
-    //     )
-    // );
+    add_settings_field(
+        'vssl_rebrand_setting',
+            __( 'Geef de VASSAL pion weer ', 'VASSAL' ),
+        'vssl_field_setting_callback',
+        'VASSAL',
+        'vssl_settings_section',
+        array(
+            'label_for'         => 'vssl_rebrand_setting',
+            'class'             => 'vssl_row',
+        )
+    );
+    add_settings_field(
+        'vssl_frontend_setting',
+            __( 'Schakel copyright shortcode in', 'VASSAL' ),
+        'vssl_field_setting_callback',
+        'VASSAL',
+        'vssl_settings_section',
+        array(
+            'label_for'         => 'vssl_frontend_setting',
+            'class'             => 'vssl_row',
+            'vssl_custom_data' => 'frontend_setting',
+            'description' => 'Instructie: gebruik [copyright] om "&copy;jaar_eerste_post - huidig_jaar" weer te geven.',
+        )
+    );
     add_settings_field(
         'vssl_xmlrpc_setting',
             __( 'Disable XMLRPC', 'VASSAL' ),
@@ -91,9 +92,10 @@ function vssl_settings_init() {
             'label_for'         => 'vssl_xmlrpc_setting',
             'class'             => 'vssl_row',
             'vssl_custom_data' => 'xmlrpc_setting',
-            'description' => 'Note: disable XMLRPC for added security. XMLRPC is required for the new Full site Editing features',
+            'description' => 'Let op: schakel XMLRPC uit voor betere beveiliging. XMLRPC is nodig voor de Full site Editor, dus deze werkt dan niet meer.',
         )
     );
+
 }
 add_action( 'admin_init', 'vssl_settings_init' );
 ?>

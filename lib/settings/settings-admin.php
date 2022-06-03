@@ -8,6 +8,7 @@ function vssl_options_page() {
         'vassal_options',
         'vssl_options_page_html',
         plugin_dir_url(__FILE__) . '/admin-icon.svg',
+        1
     );
 }
 add_action( 'admin_menu', 'vssl_options_page' );
