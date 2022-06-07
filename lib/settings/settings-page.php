@@ -31,7 +31,7 @@ function vssl_settings_section_callback( $args ) {
   <p class="description">
     Met deze instellingen wordt de WordPress interface vereenvoudigd zodat het makkelijker is om de website te beheren.
   </p>
-  <?
+  <?php
 }
 
 /** Setting field callback function. */
@@ -50,13 +50,13 @@ function vssl_field_setting_callback( $args ) {
         </option>
 
     </select>
-    <?
+    <?php
     if ($args['description']) {
       ?>
       <p class="description">
         <?php echo esc_attr( $args['description'] ); ?>
       </p>
-      <?
+      <?php
     }
 }
 ?>

@@ -1,3 +1,22 @@
+#### 2.0.4
+* added check to display site logo on login instead of vassal logo
+
+#### 2.0.3
+* optimized settings page
+
+#### 2.0.2
+* version fix
+
+#### 2.0.1
+* version fix
+
+#### 2.0.0
+* first release with updater
+* added settings page
+
+#### 1.3.0
+* 2022 update
+
 #### 1.2.0
 * 2021 update
 
