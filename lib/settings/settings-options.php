@@ -84,7 +84,7 @@ function vssl_settings_init() {
     );
     add_settings_field(
         'vssl_xmlrpc_setting',
-            __( 'Disable XMLRPC', 'VASSAL' ),
+            __( 'Schakel XMLRPC uit', 'VASSAL' ),
         'vssl_field_setting_callback',
         'VASSAL',
         'vssl_settings_section',
@@ -93,6 +93,18 @@ function vssl_settings_init() {
             'class'             => 'vssl_row',
             'vssl_custom_data' => 'xmlrpc_setting',
             'description' => 'Let op: schakel XMLRPC uit voor betere beveiliging. XMLRPC is nodig voor de Full site Editor, dus deze werkt dan niet meer.',
+        )
+    );
+    add_settings_field(
+        'vssl_disable_comments',
+            __( 'Schakel Commentaar uit', 'VASSAL' ),
+        'vssl_field_setting_callback',
+        'VASSAL',
+        'vssl_settings_section',
+        array(
+            'label_for'         => 'vssl_disable_comments',
+            'class'             => 'vssl_row',
+            'vssl_custom_data' => 'disable_comments'
         )
     );
 

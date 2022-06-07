@@ -4,7 +4,7 @@
   Description:        Vereenvoudig de WordPress Admin.
   Author:             Jonathan Leenman
   Author URI:         https://www.vassal.nl
-  Version:			      2.0.4
+  Version:			      2.0.5
 
   License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
   License URI:        http://creativecommons.org/licenses/by-sa/4.0/
@@ -39,6 +39,9 @@
   }
   if ($setting['vssl_xmlrpc_setting']=="true") {
     require_once( plugin_dir_path(__FILE__) . 'lib/disable-xmlrpc.php' );
+  }
+  if ($setting['vssl_disable_comments']=="true") {
+    require_once( plugin_dir_path(__FILE__) . 'lib/disable-comments.php' );
   }
 
 	// Updater
