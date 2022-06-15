@@ -4,7 +4,7 @@
   Description:        Vereenvoudig de WordPress Admin.
   Author:             Jonathan Leenman
   Author URI:         https://www.vassal.nl
-  Version:			      2.0.5
+  Version:			      2.0.6
 
   License:            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
   License URI:        http://creativecommons.org/licenses/by-sa/4.0/
@@ -15,6 +15,8 @@
   require_once( plugin_dir_path(__FILE__) . 'lib/settings/settings-page.php' );
   require_once( plugin_dir_path(__FILE__) . 'lib/settings/settings-options.php' );
 
+  require_once( plugin_dir_path(__FILE__) . 'lib/admin-rebrand.php' );
+
   // Get the value of the setting we've registered with register_setting()
   $setting = get_option('vssl_options');
 
@@ -24,9 +26,6 @@
   }
   if ($setting['vssl_adminbar_setting']=="true") {
     require_once( plugin_dir_path(__FILE__) . 'lib/admin-bar.php' );
-  }
-  if ($setting['vssl_rebrand_setting']=="true") {
-    require_once( plugin_dir_path(__FILE__) . 'lib/admin-rebrand.php' );
   }
   if ($setting['vssl_login_setting']=="true") {
     require_once( plugin_dir_path(__FILE__) . 'lib/admin-login.php' );

@@ -1,5 +1,4 @@
 <?php
-
 //VASSAL copyright
 function vssl_copyright() {
 	// check for cached values for copyright dates
@@ -48,5 +47,4 @@ function vssl_copyright_shortcode( $atts ) {
     echo vssl_copyright();
 }
 add_shortcode('copyright', 'vssl_copyright_shortcode');
-
 ?>

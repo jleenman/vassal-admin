@@ -1,5 +1,4 @@
 <?php
-
 class Vassal_Updater {
 
 	private $file;
@@ -113,12 +112,12 @@ class Vassal_Updater {
 				$plugin = array(
 					'name'				=> $this->plugin["Name"],
 					'slug'				=> $this->basename,
-					'requires'					=> '3.3',
-					'tested'						=> '4.4.1',
-					'rating'						=> '100.0',
-					'num_ratings'				=> '10823',
-					'downloaded'				=> '14249',
-					'added'							=> '2016-01-05',
+					'requires'					=> '5.0',
+					'tested'						=> '6.0',
+					'rating'						=> '0.0',
+					'num_ratings'				=> '0',
+					'downloaded'				=> '7',
+					'added'							=> '2013-11-02',
 					'version'			=> $this->github_response['tag_name'],
 					'author'			=> $this->plugin["AuthorName"],
 					'author_profile'	=> $this->plugin["AuthorURI"],

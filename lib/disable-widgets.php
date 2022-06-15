@@ -1,5 +1,4 @@
 <?php
-
 /*-----------------------------------------------------------------------------------*/
 /* Remove Unused Admin Sidebar Menu Items */
 /* https://www.wpbeginner.com/wp-tutorials/how-to-remove-wordpress-dashboard-widgets/ */

@@ -1,5 +1,4 @@
 <?php
-
 function vssl_settings_init() {
     // Register a new setting for "VASSAL" page.
     register_setting( 'VASSAL', 'vssl_options' );
@@ -55,17 +54,6 @@ function vssl_settings_init() {
         'vssl_settings_section',
         array(
             'label_for'         => 'vssl_footer_setting',
-            'class'             => 'vssl_row',
-        )
-    );
-    add_settings_field(
-        'vssl_rebrand_setting',
-            __( 'Geef de VASSAL pion weer ', 'VASSAL' ),
-        'vssl_field_setting_callback',
-        'VASSAL',
-        'vssl_settings_section',
-        array(
-            'label_for'         => 'vssl_rebrand_setting',
             'class'             => 'vssl_row',
         )
     );
