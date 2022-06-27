@@ -1,4 +1,7 @@
 <?php
+// https://www.smashingmagazine.com/2015/08/deploy-wordpress-plugins-with-github-using-transients/
+// https://github.com/rayman813/smashing-updater-plugin
+
 class Vassal_Updater {
 
 	private $file;
