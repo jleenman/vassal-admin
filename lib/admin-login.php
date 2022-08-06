@@ -30,6 +30,6 @@ add_filter('login_headerurl', 'vssl_login_url');
 
 // changing the alt text on the logo to show your site name
 function vssl_login_title() { return get_option('blogname'); }
-add_filter('login_headertitle', 'vssl_login_title');
+add_filter('login_headertext', 'vssl_login_title');
 
 ?>
