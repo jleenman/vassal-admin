@@ -51,7 +51,7 @@ function vssl_field_setting_callback( $args ) {
 
     </select>
     <?php
-    if ($args['description']) {
+    if (isset($setting['description']) && $args['description']) {
       ?>
       <p class="description">
         <?php echo esc_attr( $args['description'] ); ?>
