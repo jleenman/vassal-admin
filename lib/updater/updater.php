@@ -80,22 +80,24 @@ class Vassal_Updater {
 
 				$this->get_repository_info(); // Get the repo info
 
-				$out_of_date = version_compare( $this->github_response['tag_name'], $checked[ $this->basename ], 'gt' ); // Check if we're out of date
+				if (isset($this->github_response['tag_name']) && isset($checked[ $this->basename ])) {
+					$out_of_date = version_compare( $this->github_response['tag_name'], $checked[ $this->basename ], 'gt' ); // Check if we're out of date
 
-				if( $out_of_date ) {
+					if( $out_of_date ) {
 
-					$new_files = $this->github_response['zipball_url']; // Get the ZIP
+						$new_files = $this->github_response['zipball_url']; // Get the ZIP
 
-					$slug = current( explode('/', $this->basename ) ); // Create valid slug
+						$slug = current( explode('/', $this->basename ) ); // Create valid slug
 
-					$plugin = array( // setup our plugin info
-						'url' => $this->plugin["PluginURI"],
-						'slug' => $slug,
-						'package' => $new_files,
-						'new_version' => $this->github_response['tag_name']
-					);
+						$plugin = array( // setup our plugin info
+							'url' => $this->plugin["PluginURI"],
+							'slug' => $slug,
+							'package' => $new_files,
+							'new_version' => $this->github_response['tag_name']
+						);
 
-					$transient->response[$this->basename] = (object) $plugin; // Return it in response
+						$transient->response[$this->basename] = (object) $plugin; // Return it in response
+					}
 				}
 			}
 		}
